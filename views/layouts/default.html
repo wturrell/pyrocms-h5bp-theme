@@ -1,0 +1,29 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    {{ theme:partial name="metadata" }}
+</head>
+<body>
+  <header>
+    {{ theme:partial name="header" }}
+  </header>
+                
+  <div role="main">
+    {{ template:body }}
+  </div>
+  
+  <footer>
+    {{ theme:partial name="footer" }}
+  </footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/{{ theme:path }}/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+  {{ theme:js file="plugins.js" }}
+  {{ theme:js file="script.js" }}
+
+</body>
+</html>
