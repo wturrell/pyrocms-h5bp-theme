@@ -1,6 +1,6 @@
 For when *Minimal* is too fancy...
 
-A barebones copy of HTML5 Boilerplate (using version 3, 6 Feb 2012) as a PyroCMS theme.
+An (unofficial) barebones copy of HTML5 Boilerplate (v3, 6 Feb 2012) as a PyroCMS theme.  
 This is the stripped (comment free) version.  Header, footer and metadata partials only.
 
 It includes modernizr, jQuery (CDN and local fallback) and the H5BP CSS.
@@ -11,7 +11,7 @@ For more on HTML5 Boilerplate, see http://www.h5bp.com/
 Installation
 ============
 
-Copy all files to /addons/shared_addons/themes/ (create a new subdirectory for them)
-Go to http://www.*yoursite*.com/admin/themes
+1. Copy all files to /addons/shared_addons/themes/ (create a new subdirectory for them)
+2. Go to http://www.*yoursite*.com/admin/themes
 
 
