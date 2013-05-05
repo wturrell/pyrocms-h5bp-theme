@@ -1,12 +1,16 @@
-<!doctype html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
     {{ theme:partial name="metadata" }}
 </head>
 <body>
+<!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+
   <header>
     {{ theme:partial name="header" }}
   </header>
@@ -19,11 +23,12 @@
     {{ theme:partial name="footer" }}
   </footer>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="/{{ theme:path }}/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="{{ theme:path }}/js/libs/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    <? if (ENVIRONMENT == 'development') { ?>{{ theme:js file="libs/vendor/jquery-migrate-1.1.0.js" }}<? } ?>
 
-  {{ theme:js file="plugins.js" }}
-  {{ theme:js file="script.js" }}
+    {{ theme:js file="plugins.js" }}
+    {{ theme:js file="main.js" }}
 
 </body>
 </html>
