@@ -6,8 +6,8 @@ class Theme_h5bp extends Theme {
     public $author = 'William Turrell';
     public $author_website = 'http://wturrell.co.uk/';
     public $website = 'http://www.h5bp.com/';
-    public $description = 'HTML5 boiletplate v3 stripped.';
-    public $version = '1.1';
+    public $description = 'HTML5 boilerplate v4.2.0 stripped.';
+    public $version = '1.2';
 
 }
 
